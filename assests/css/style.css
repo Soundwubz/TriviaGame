@@ -1,3 +1,7 @@
 .head-row td{
     text-align: center;
 }
+
+#answersDisplay {
+    display: none;
+}

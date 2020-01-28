@@ -5,107 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="./assests/css/style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>Trivia Game</title>
 </head>
 <body>
     <div class="container">
-        <table style="margin: 0 auto;">
-            <tr class="head-row">
-                <td colspan="4">
-                    <h1 class="qTitle">Question #1</h1>
-                </td>
-            </tr>
+        <h1>Time Remaining: <span id="time">60</span></h1>
+        <table style="margin: 0 auto;" id="gameTable">
+                <tr class="head-row">
+                    <td colspan="4">
+                        <h1 class="qTitle">The character Jar Jar Binks first appears in which of the Star Wars movies?</h1>
+                    </td>
+                </tr>
+                <tr class="ans-row">
+                    <td>
+                        <input type="radio" name="q1" value="TPM"> <label>Episode 1 - The Phantom Menace</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q1" value="ESB"> <label>Episode 5 - The Empire Strikes Back</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q1" value="AOTC"> <label>Episode 2 - Attack Of The Clones</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q1" value="TLJ"> <label>Episode 8 - The Last Jedi</label>
+                    </td>
+                </tr>
+                <tr class="head-row">
+                    <td colspan="4">
+                        <h1 class="qTitle">which Superhero doesn't have powers?</h1> 
+                    </td>
+                </tr>
+                <tr class="ans-row">
+                    <td>
+                        <input type="radio" name="q2" value="GL"> <label>Green Lantern</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q2" value="DP"> <label>Deadpool</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q2" value="RB"> <label>Robin</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q2" value="CA"> <label>Captain America</label>
+                    </td>
+                </tr>
+                <tr class="head-row">
+                    <td colspan="4">
+                        <h1 class="qTitle">Planters Mascot, Mr. Peanut, died at what age?</h1> 
+                    </td>
+                </tr>
+                <tr class="ans-row">
+                    <td>
+                        <input type="radio" name="q3" value="50"> <label>50</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q3" value="65"> <label>65</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q3" value="76"> <label>76</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q3" value="104"> <label>104</label>
+                    </td>
+                </tr>
+                <tr class="head-row">
+                    <td colspan="4">
+                        <h1 class="qTitle">What is Paul McCartney’s middle name?</h1> 
+                    </td>
+                </tr>
+                <tr class="ans-row">
+                    <td>
+                        <input type="radio" name="q4" value="John"> <label>John</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q4" value="Paul"> <label>Paul</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q4" value="James"> <label>James</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q4" value="Steven"> <label>Steven</label>
+                    </td>
+                </tr>
+                <tr class="head-row">
+                    <td colspan="4">
+                        <h1 class="qTitle">How many of the 9 Star Wars Movies has its creator, George Lucas directed?</h1> 
+                    </td>
+                </tr>
             <tr class="ans-row">
                 <td>
-                    <input type="radio" name="q1" data-name="q1-a1"> <label>Answer #1</label>
+                    <input type="radio" name="q5" value="3"> <label>3</label>
                 </td>
                 <td>
-                    <input type="radio" name="q1" data-name="q1-a2"> <label>Answer #2</label>
+                    <input type="radio" name="q5" value="9"> <label>9</label>
                 </td>
                 <td>
-                    <input type="radio" name="q1" data-name="q1-a3"> <label>Answer #3</label>
+                    <input type="radio" name="q5" value="6"> <label>6</label>
                 </td>
                 <td>
-                    <input type="radio" name="q1" data-name="q1-a4"> <label>Answer #4</label>
-                </td>
-            </tr>
-            <tr class="head-row">
-                <td colspan="4">
-                    <h1 class="qTitle">Question #2</h1> 
-                </td>
-            </tr>
-            <tr class="ans-row">
-                <td>
-                    <input type="radio" name="q2" data-name="q2-a1"> <label>Answer #1</label>
-                </td>
-                <td>
-                    <input type="radio" name="q2" data-name="q2-a2"> <label>Answer #2</label>
-                </td>
-                <td>
-                    <input type="radio" name="q2" data-name="q2-a3"> <label>Answer #3</label>
-                </td>
-                <td>
-                    <input type="radio" name="q2" data-name="q2-a4"> <label>Answer #4</label>
-                </td>
-            </tr>
-            <tr class="head-row">
-                <td colspan="4">
-                    <h1 class="qTitle">Question #3</h1> 
-                </td>
-            </tr>
-            <tr class="ans-row">
-                <td>
-                    <input type="radio" name="q3" data-name="q3-a1"> <label>Answer #1</label>
-                </td>
-                <td>
-                    <input type="radio" name="q3" data-name="q3-a2"> <label>Answer #2</label>
-                </td>
-                <td>
-                    <input type="radio" name="q3" data-name="q3-a3"> <label>Answer #3</label>
-                </td>
-                <td>
-                    <input type="radio" name="q3" data-name="q3-a4"> <label>Answer #4</label>
-                </td>
-            </tr>
-            <tr class="head-row">
-                <td colspan="4">
-                    <h1 class="qTitle">Question #4</h1> 
-                </td>
-            </tr>
-            <tr class="ans-row">
-                <td>
-                    <input type="radio" name="q4" data-name="q4-a1"> <label>Answer #1</label>
-                </td>
-                <td>
-                    <input type="radio" name="q4" data-name="q4-a2"> <label>Answer #2</label>
-                </td>
-                <td>
-                    <input type="radio" name="q4" data-name="q4-a3"> <label>Answer #3</label>
-                </td>
-                <td>
-                    <input type="radio" name="q4" data-name="q4-a4"> <label>Answer #4</label>
-                </td>
-            </tr>
-            <tr class="head-row">
-                <td colspan="4">
-                    <h1 class="qTitle">Question #5</h1> 
-                </td>
-            </tr>
-            <tr class="ans-row">
-                <td>
-                    <input type="radio" name="q5" data-name="q5-a1"> <label>Answer #1</label>
-                </td>
-                <td>
-                    <input type="radio" name="q5" data-name="q5-a2"> <label>Answer #2</label>
-                </td>
-                <td>
-                    <input type="radio" name="q5" data-name="q5-a3"> <label>Answer #3</label>
-                </td>
-                <td>
-                    <input type="radio" name="q5" data-name="q5-a4"> <label>Answer #4</label>
+                    <input type="radio" name="q5" value="4"> <label>4</label>
                 </td>
             </tr>
         </table>
+        <div id="answersDisplay">
+            <h1>Correct Answers: <span id="correctAns"></span></h1>
+            <h1>Incorrect Answers: <span id="incorrectAns"></span></h1>
+            <h1>Unanswered Answers: <span id="unanswered"></span></h1>
+        </div>
     </div>
+    <script src="./assests/javascript/app.js"></script>
 </body>
 </html>
