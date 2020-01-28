@@ -1,7 +1,42 @@
+@font-face {
+    font-family: 'Gyparody';
+    src: url('../fonts/gyparody\ hv.ttf');
+}
+
+@font-face {
+    font-family: 'Korin';
+    src: url('../fonts/KorinnaBold.ttf');
+}
+
+body {
+    background: #0533cc;
+}
+
+p, label {
+    color: yellow;
+    font-family: 'Korin';
+}
+
+h1 {
+    color: white;
+    font-family: 'Gyparody';
+}
+
 .head-row td{
     text-align: center;
 }
 
+.ans-row td {
+    border: 2px solid white;
+    text-align: center;
+    padding: 20px;
+}
 #answersDisplay {
     display: none;
+    text-align: center;
+}
+
+#gameTable {
+    border: 2px solid white;
+    padding: 25px;
 }
